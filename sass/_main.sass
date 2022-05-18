@@ -1,0 +1,445 @@
+main
+	.services
+		background-color: #EBEBEB
+		position: relative
+		display: flex
+		justify-content: center
+		flex-direction: column
+		padding-left: 18.5%
+		padding-right: 20%
+		padding-top: 50px
+		padding-bottom: 100px
+
+		>p
+			font-family: 'Lato', sans-serif
+			font-style: normal
+			font-weight: 900
+			font-size: 24px
+			line-height: 33px
+			color: #BDBDBD
+
+		h2
+			font-family: 'Merriweather', serif
+			font-style: normal
+			font-weight: 900
+			font-size: 48px
+			line-height: 69px
+			color: #333333
+			padding-top: 30px
+			padding-bottom: 50px
+
+		.services_cards
+			display: grid
+			grid-template-columns: repeat(3, 1fr)
+			grid-template-rows:	repeat(2, 1fr)
+			grid-gap: 40px
+			justify-content: center
+
+			>div
+				background: url('../media/card_background.png')
+				width: 350px
+				height: 360px
+				cursor: pointer
+				transition: background 0.5s ease
+
+				&:hover
+					background: url('../media/card_background2.png')
+					background-size: cover
+					background-position: center
+
+				>p
+					font-family: 'Lato', sans-serif
+					font-style: normal
+					font-weight: 900
+					font-size: 24px
+					line-height: 30px
+					color: white
+					padding-top: 75%
+					padding-left: 10%
+
+	.about_us
+		width: 100%
+		height: 90vh
+		background-color: #F9F9F9
+		display: flex
+
+		.left_side
+			max-width: 50%
+			min-width: 50%
+
+			>h2
+				font-family: 'Lato', sans-serif
+				font-style: normal
+				font-weight: 900
+				font-size: 24px
+				line-height: 33px
+				color: #BDBDBD
+				padding-left: 37%
+				padding-top: 12%
+				padding-bottom: 3%
+
+			>p
+				font-family: 'Merriweather', serif
+				font-style: normal
+				font-weight: 900
+				font-size: 48px
+				line-height: 69px
+				color: #333333
+				padding-left: 37%
+
+			>p+p
+				color: #005FA3
+				padding-left: 37%
+
+			>p+p+p
+				font-family: 'Lato', sans-serif
+				font-style: normal
+				font-weight: 300
+				font-size: 18px
+				line-height: 25px
+				color: #000000
+				padding-left: 37%
+				padding-right: 10%
+				padding-top: 3%
+
+		.right_side
+			max-width: 50%
+			min-width: 50%
+			display: grid
+			grid-template-columns: repeat(2, 255px)
+			grid-template-rows:	repeat(2, 255px)
+			grid-gap: 40px
+			padding-top: 7%
+			padding-left: 7px
+
+			>div
+				background-color: #EBEBEB
+				padding: 15%
+				display: flex
+				color: black
+				flex-direction: column
+				justify-content: space-between
+				transition: background-color 0.5s, color 0.5s ease
+
+				&:hover
+					background-color: #005FA3
+					color: #fff
+
+					a
+						color: #fff
+
+				>h3
+					font-family: 'Lato', serif
+					font-style: normal
+					font-weight: 900
+					font-size: 55px
+					line-height: 66px
+					letter-spacing: 0.1em
+					text-transform: uppercase
+
+				>p
+					font-family: 'Lato', sans-serif
+					font-style: normal
+					font-weight: 700
+					font-size: 14px
+					line-height: 18px
+
+				>a
+					font-family: 'Lato', sans-serif
+					font-style: normal
+					font-weight: 700
+					font-size: 14px
+					line-height: 17px
+					text-decoration-line: underline
+					color: #005FA3
+					padding-top: 15%
+					transition: color 0.5s
+
+	.our_clients
+		display: flex
+		flex-direction: column
+		justify-content: center
+		height: 630px
+		background-color: #EBEBEB
+		padding-left: 20%
+		padding-right: 20%
+
+		>h2
+			font-family: 'Lato', sans-serif
+			font-style: normal
+			font-weight: 900
+			font-size: 24px
+			line-height: 33px
+			color: #BDBDBD
+			padding-top: 5%
+			padding-bottom: 2%
+
+		>p
+			font-family: 'Merriweather', serif
+			font-style: normal
+			font-weight: 900
+			font-size: 48px
+			line-height: 69px
+
+		.client-container
+			margin: 0 auto
+			width: 100%
+			height: 200px
+			position: relative
+
+			&>div
+				width: 100%
+				height: 70%
+
+		.client-main
+			overflow: hidden
+
+		.client-frame
+			height: 100%
+			position: relative
+			display: flex
+			justify-content: space-between
+			transition: right 0.5s ease
+
+			&>div
+				height: 100%
+				width: 80%
+				background-size: cover
+				background-position: center
+
+		.client-trigger
+			position: absolute
+			right: 1%
+			bottom: 0
+			display: flex
+
+			&>div
+				height: 50px
+				width: 50px
+				display: flex
+				justify-content: center
+				align-items: center
+				font-size: 14px
+				color: white
+				background-color: #005FA359
+				cursor: pointer
+				transition: background-color 0.3s ease
+
+				&:hover
+					background-color: #005fa3
+
+		.client-points
+			position: absolute
+			bottom: 0
+			left: 0
+			display: flex
+			list-style: none
+
+			li
+				width: 8px
+				height: 8px
+				background-color: #005FA359
+				cursor: pointer
+				border-radius: 50px
+				transition: background-color 0.2s ease
+
+				&:hover
+					background-color: #005FA3d6
+
+				&.activeClient
+					background-color: #005FA3
+
+			li+li
+				margin-left: 30px
+
+	.reviews
+		display: flex
+		flex-direction: column
+		height: 800px
+		padding-left: 20%
+		padding-right: 20%
+		padding-top: 5%
+
+
+		>h2
+			font-family: 'Lato', serif
+			font-style: normal
+			font-weight: 900
+			font-size: 24px
+			line-height: 33px
+			color: #BDBDBD
+
+		>p
+			font-family: 'Merriweather', serif
+			font-style: normal
+			font-weight: 900
+			font-size: 48px
+			line-height: 69px
+			padding-bottom: 50px
+
+		.feedbackGallery
+			.feedback-container
+				margin: 0 auto
+				width: 100%
+				height: auto
+				position: relative
+
+				&>div
+					width: 100%
+					height: 100%
+
+				.feedback-main
+					overflow: hidden
+
+				.feedback-frame
+					height: 100%
+					position: relative
+					display: flex
+					right: 0
+					transition: right 0.5s ease
+
+					&>div
+						height: 100%
+						background-size: cover
+						background-position: center
+						display: flex
+						justify-content: center
+						align-items: center
+
+				.feedback-trigger
+					position: absolute
+					transform: translateY(-100%)
+					right: 0
+					top: 140%
+					display: flex
+
+					&>div
+						height: 50px
+						width: 50px
+						display: flex
+						justify-content: center
+						align-items: center
+						font-size: 14px
+						color: white
+						background-color: #005FA359
+						cursor: pointer
+						transition: background-color 0.3s ease
+
+						&:hover
+							background-color: #005fa3
+
+				.feedback-points
+					position: absolute
+					transform: translateY(-100%)
+					top: 140%
+					left: 0
+					display: flex
+					list-style: none
+
+					li
+						width: 8px
+						height: 8px
+						background-color: #005FA359
+						cursor: pointer
+						border-radius: 50px
+						transition: background-color 0.2s ease
+
+						&:hover
+							background-color: #005FA3d6
+
+						&.active
+							background-color: #005FA3
+
+					li+li
+						margin-left: 30px
+		.content-feedback
+			width: 1200px
+			height: 100%
+			margin-left: 90px
+			margin-right: 90px
+			padding-top: 40px
+			padding-bottom: 40px
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+
+			.p-feedback
+				color: #000
+				font-size: 18px
+				margin-bottom: 58px
+
+			.human
+				display: flex
+				align-items: center
+
+				.img
+					height: 80px
+					width: 80px
+					border-radius: 50px
+					background-size: cover
+					background-position: center
+					margin-right: 35px
+
+				.name
+					font-size: 18px
+					font-weight: 900
+					margin-bottom: 5px
+
+				.company
+					font-size: 14px
+
+
+@media (max-width: 1200px)
+	main .services .services_cards
+		grid-template-columns: repeat(1, 1fr)
+		grid-template-rows: repeat(6, 1fr)
+
+	main .services .services_cards > div
+		width: 700px
+		background-size: cover
+
+	main .services .services_cards > div p
+		padding-top: 40%
+
+	main .about_us 
+		height: 100%
+		display: block
+		padding-bottom: 100px
+
+	main .about_us .left_side
+		max-width: 100%
+
+	main .about_us .left_side > h2
+		padding-left: 15%
+
+	main .about_us .left_side p
+		padding-left: 15%
+	main .about_us .left_side p+p
+		padding-left: 15%
+	main .about_us .left_side p+p+p
+		padding-left: 15%
+
+	main .about_us .right_side
+		grid-template-columns: repeat(1, 656px)
+		grid-template-rows: repeat(4, 200px)
+		grid-gap: 40px
+		padding-top: 7%
+		padding-left: 7px
+		justify-content: center
+		max-width: 100%
+
+	main .about_us .right_side > div 
+		padding: 15%
+		justify-content: space-between
+		align-items: center
+		flex-direction: row
+
+		>a
+			padding-top: 0%
+			
+	main .reviews .content-feedback .human
+		display: none
+
+
+
+
